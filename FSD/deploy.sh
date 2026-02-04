@@ -40,9 +40,9 @@ cd "$SOURCE_DIR" || exit
 echo "Installing dependencies..."
 npm install
 
-echo "Building project with base path /SEM_6/$TARGET_DIR_NAME/ ..."
+echo "Building project with base path /$TARGET_DIR_NAME/ ..."
 # This overrides the base path in vite.config.js
-npm run build -- --base=/SEM_6/$TARGET_DIR_NAME/
+npm run build -- --base=/$TARGET_DIR_NAME/
 
 if [ $? -ne 0 ]; then
     echo "Build failed. Exiting."
@@ -75,5 +75,6 @@ git push origin main
 
 echo "=========================================="
 echo "Deployment Complete!"
-echo "URL: https://Kartiik7.github.io/SEM_6/$TARGET_DIR_NAME/"
+echo "URL: https://23bai70520.kartikpatel.tech/$TARGET_DIR_NAME/"
+echo "Alternative URL: https://Kartiik7.github.io/SEM_6/$TARGET_DIR_NAME/"
 echo "=========================================="
