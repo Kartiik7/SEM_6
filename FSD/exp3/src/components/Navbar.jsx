@@ -32,7 +32,10 @@ const Navbar = (props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navItems = [
     { label: 'Home', path: '/' },
+    { label: 'Events', path: '/events' },
     { label: 'Schedule', path: '/schedule' },
+    { label: 'Speakers', path: '/speakers' },
+    { label: 'Register', path: '/register' },
   ];
 
   const handleDrawerToggle = () => {
