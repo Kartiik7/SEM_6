@@ -1,16 +1,59 @@
-# React + Vite
+# Experiment 3: React Router Multi-Page Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is an extension of the "College Event Page" (Experiment 2), upgraded to a **Multi-Page Application (MPA)** using **React Router**. It demonstrates client-side routing, modular folder structure, and consistent UI design across multiple pages without page reloads.
 
-Currently, two official plugins are available:
+## Features
+- **Multi-Page Navigation:** Seamless transitions between pages using `react-router-dom`.
+- **Pages Included:**
+    - **Home:** Landing page with Hero, About, and Venue sections.
+    - **Events:** Dedicated page for upcoming events.
+    - **Schedule:** Detailed timeline of the event.
+    - **Speakers:** Profiles of guest speakers.
+    - **Register:** User registration form.
+- **Responsive Design:** Built with **Bootstrap 5** and **Material UI** for a mobile-friendly experience.
+- **Component Reusability:** Navbar, Footer, and content sections are modular components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Framework:** React + Vite
+- **Routing:** React Router Dom (v7)
+- **Styling:** Material UI (@mui/material), Bootstrap 5, Emotion
+- **Icons:** Material UI Icons
 
-## React Compiler
+## Project Structure
+```
+src/
+├── components/        # Reusable UI components (Navbar, Footer, etc.)
+├── pages/             # Page-level components (Home, Events, Schedule, etc.)
+├── App.jsx            # Main application component with Route definitions
+├── main.jsx           # Entry point
+└── index.css          # Global styles
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation & Setup
 
-## Expanding the ESLint configuration
+1. **Navigate to the project directory:**
+   ```bash
+   cd d:\SEM_6\FSD\exp3
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Key Learnings
+- Implementing `BrowserRouter`, `Routes`, and `Route`.
+- Using `NavLink` for active navigation state.
+- Structuring a React project for scalability.
+- Managing navigation in a Single Page Application (SPA).
