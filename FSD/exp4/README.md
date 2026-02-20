@@ -1,4 +1,4 @@
-# Experiment 3: React Router Multi-Page Extension
+# Experiment 4: React Router Multi-Page Extension
 
 ## Overview
 This project is an extension of the "College Event Page" (Experiment 2), upgraded to a **Multi-Page Application (MPA)** using **React Router**. It demonstrates client-side routing, modular folder structure, and consistent UI design across multiple pages without page reloads.
@@ -34,7 +34,7 @@ src/
 
 1. **Navigate to the project directory:**
    ```bash
-   cd d:\SEM_6\FSD\exp3
+   cd d:\SEM_6\FSD\exp4
    ```
 
 2. **Install dependencies:**
