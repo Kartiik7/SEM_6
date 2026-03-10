@@ -1,0 +1,4 @@
+[build]
+  base    = "FSD/mst"
+  command = "npm run build"
+  publish = "FSD/mst/dist"
