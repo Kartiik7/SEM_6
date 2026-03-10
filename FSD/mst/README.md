@@ -1,11 +1,50 @@
-# React + Vite
+# User List App — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that fetches and displays a list of users from a public REST API.
 
-Currently, two official plugins are available:
+**Student:** Kartik Patel | **Roll No:** 23BAI70520
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## Features
+
+- Fetches user data from [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users)
+- Displays each user's **Name** and **Email**
+- Shows a loading state while data is being fetched
+- Handles and displays API errors gracefully
+
+## Concepts Covered
+
+- `useEffect` Hook — runs API call on component mount
+- `useState` Hook — stores users, loading, and error state
+- `fetch` API — makes HTTP GET request to external API
+- `Array.map()` — dynamically renders the user list
+
+## Folder Structure
+
+```
+src/
+├── components/
+│   └── Users.jsx   ← fetches and renders user list
+├── App.jsx         ← root component
+├── main.jsx        ← entry point
+└── index.css
+```
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+---
 
 ## React Compiler
 
