@@ -1,0 +1,1 @@
+{"name":"Local: 1082Div2 copy","url":"d:\\SEM_6\\CP\\1082Div2 copy.cpp","tests":[{"id":1772203196957,"input":"6\n1\na\n6\nllmllm\n6\nuwuuwu\n6\nbyebye\n6\noooioi\n12\nsiixxsevvenn\n","output":"NO\nYES\nYES\nNO\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\SEM_6\\CP\\1082Div2 copy.cpp","group":"local","local":true}
