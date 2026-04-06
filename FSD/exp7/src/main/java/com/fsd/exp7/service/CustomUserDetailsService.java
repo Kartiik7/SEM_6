@@ -1,14 +1,15 @@
 package com.fsd.exp7.service;
 
-import com.fsd.exp7.entity.User;
-import com.fsd.exp7.repository.UserRepository;
+import java.util.List;
+
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.fsd.exp7.entity.User;
+import com.fsd.exp7.repository.UserRepository;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

@@ -1,12 +1,13 @@
 package com.fsd.exp7.service;
 
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.stereotype.Service;
+
 import com.fsd.exp7.dto.LoginRequest;
 import com.fsd.exp7.dto.LoginResponse;
 import com.fsd.exp7.entity.User;
 import com.fsd.exp7.repository.UserRepository;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.stereotype.Service;
 
 @Service
 public class AuthService {
