@@ -1,0 +1,31 @@
+:root {
+  --bg-soft: #f4f7fb;
+  --glass-bg: rgba(255, 255, 255, 0.86);
+  --glass-border: rgba(15, 23, 42, 0.12);
+}
+
+body {
+  background: radial-gradient(circle at top left, #e3edf8 0%, #f9fbff 45%, #eff6ff 100%);
+}
+
+.page-shell {
+  min-height: calc(100vh - 96px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.login-card {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.glass-nav {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  margin: 1rem;
+  backdrop-filter: blur(8px);
+}
